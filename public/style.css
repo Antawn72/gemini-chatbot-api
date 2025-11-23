@@ -1,0 +1,152 @@
+/* General Body Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #2c2f33;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 90%;
+  max-width: 800px;
+  height: 90vh;
+  background-color: #23272a;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* New styles for the main title */
+.chat-container h1 {
+  background: linear-gradient(90deg, #88c0d0, #81a1c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+  padding: 15px 10px;
+  margin: 0;
+  border-bottom: 1px solid #40444b;
+}
+
+/* Chat Box - where messages appear */
+.chat-box {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Welcome message styles */
+.welcome-message {
+  text-align: center;
+  margin: auto;
+  color: #999;
+  padding: 20px;
+}
+
+.welcome-message h2 {
+  color: #fff;
+}
+.welcome-message p {
+  font-size: 1rem;
+}
+
+/* Individual Message Styles */
+.message {
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 70%;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background-color: #25d366; /* A fresh green color */
+  color: #ffffff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.message.bot {
+  background-color: #36393f; /* Slightly adjusted dark grey */
+  color: #dcddde;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+/* Styling for markdown elements from bot */
+.message.bot strong {
+  color: #ffffff;
+}
+.message.bot ul {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+.message.bot li {
+  margin-bottom: 4px;
+}
+
+/* Chat Form */
+#chat-form {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #40444b;
+}
+
+/* Updated styles for file upload button */
+.file-upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px; /* Set a minimum width */
+  height: 44px; /* Set a fixed height */
+  margin-right: 10px; /* Add space to the right */
+  background-color: #40444b; /* Match input field background */
+  border-radius: 8px; /* Match input field border-radius */
+  font-size: 20px;
+  cursor: pointer;
+  color: #b9bbbe;
+  transition: background-color 0.2s, color 0.2s;
+}
+.file-upload-button:hover {
+  background-color: #5c6067; /* Darken on hover */
+}
+
+#user-input {
+  flex-grow: 1;
+  border: none;
+  background-color: #40444b;
+  color: #dcddde;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+#chat-form button {
+  background-color: #7289da;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+#chat-form button:hover {
+  background-color: #677bc4;
+}
